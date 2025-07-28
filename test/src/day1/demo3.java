@@ -15,10 +15,7 @@ public class demo3 {
 		System.out.println("!(a&&b)="+!(a&&b));
 		System.out.println("z="+z);
 		
-		int i_val=10,j_val=2;
-		boolean chk;
-		chk=i_val<j_val;
-		System.out.println("chk value:""+chk);
+		
 		
 	}
 
