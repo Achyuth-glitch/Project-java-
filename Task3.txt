@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Three Lists with Nesting</title>
+  <style>
+    body { font-family: system-ui, Arial, sans-serif; padding: 24px; }
+    main { max-width: 800px; margin: 0 auto; }
+    h2 { margin-top: 1.5rem; }
+  </style>
+</head>
+<body>
+  <header>
+    <h1>Three Lists Demo</h1>
+  </header>
+
+  <main>
+    <section>
+      <h2>List 1 (Ordered with nested subitems)</h2>
+      <ol>
+        <li>One
+          <ol type="a">
+            <li>Uno</li>
+            <li>Hanna</li>
+          </ol>
+        </li>
+        <li>Two
+          <ol type="a">
+            <li>Dos</li>
+            <li>Två</li>
+          </ol>
+        </li>
+      </ol>
+    </section>
+
+    <section>
+      <h2>List 2 (Unordered)</h2>
+      <ul>
+        <li>Apple</li>
+        <li>Banana</li>
+        <li>Cherry</li>
+      </ul>
+    </section>
+
+    <section>
+      <h2>List 3 (Description List)</h2>
+      <dl>
+        <dt>HTML</dt><dd>Structure of web pages</dd>
+        <dt>CSS</dt><dd>Presentation and styles</dd>
+        <dt>JS</dt><dd>Interactivity and logic</dd>
+      </dl>
+    </section>
+  </main>
+
+  <footer>
+    <small>&copy; 2025</small>
+  </footer>
+</body>
+</html>

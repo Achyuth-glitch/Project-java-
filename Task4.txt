@@ -1,0 +1,145 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>HTML Puzzle Programs</title>
+  <style>
+    /* 1. Invisible Table */
+    .invisible-table, .invisible-table td {
+      border: none;
+      border-collapse: collapse;
+      padding: 20px;
+    }
+
+    /* 2. Nested List Illusion */
+    .inline-list li, .inline-list ul, .inline-list ol {
+      display: inline;
+      margin: 0;
+      padding: 0;
+      list-style: none;
+    }
+
+    /* 5. Fake Heading Trap */
+    .fake-h1 {
+      font-size: 2em;
+      font-weight: bold;
+    }
+
+    /* 9. Fake Link */
+    .fake-link {
+      color: blue;
+      text-decoration: underline;
+      cursor: pointer;
+    }
+  </style>
+</head>
+<body>
+
+  <!-- 1. Invisible Table Challenge -->
+  <h2>1. Invisible Table Challenge</h2>
+  <table class="invisible-table">
+    <tr>
+      <td><a href="#">Cell 1</a></td>
+      <td><a href="#">Cell 2</a></td>
+      <td><a href="#">Cell 3</a></td>
+    </tr>
+    <tr>
+      <td><a href="#">Cell 4</a></td>
+      <td><a href="#">Cell 5</a></td>
+      <td><a href="#">Cell 6</a></td>
+    </tr>
+    <tr>
+      <td><a href="#">Cell 7</a></td>
+      <td><a href="#">Cell 8</a></td>
+      <td><a href="#">Cell 9</a></td>
+    </tr>
+  </table>
+
+  <!-- 2. Nested List Illusion -->
+  <h2>2. Nested List Illusion</h2>
+  <p class="inline-list">
+    <ol>
+      <li>This </li>
+      <li>is </li>
+      <li>a </li>
+      <ul>
+        <li>hidden </li>
+        <li>list </li>
+      </ul>
+      <li>in disguise.</li>
+    </ol>
+  </p>
+
+  <!-- 3. Broken Image Trick -->
+  <h2>3. Broken Image Trick</h2>
+  <img src="https://via.placeholder.com/100" alt="Normal Image">
+  <img src="broken-link.jpg" alt="Broken Image">
+  <picture>
+    <source srcset="https://via.placeholder.com/100/000000/FFFFFF?text=Dark+Mode" media="(prefers-color-scheme: dark)">
+    <img src="data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///ywAAAAAAQABAAACAUwAOw==" alt="Dark Mode Only">
+  </picture>
+
+  <!-- 4. Form without Submit Button -->
+  <h2>4. Form without Submit Button</h2>
+  <form action="#" method="get">
+    <input type="text" name="username" placeholder="Username"><br>
+    <input type="password" name="password" placeholder="Password"><br>
+    <input type="image" src="https://via.placeholder.com/60x30?text=Go" alt="Submit">
+  </form>
+
+  <!-- 5. Fake Heading Trap -->
+  <h2>5. Fake Heading Trap</h2>
+  <div class="fake-h1">This looks like an H1 heading</div>
+
+  <!-- 6. Clickable Image Map Puzzle -->
+  <h2>6. Clickable Image Map Puzzle</h2>
+  <img src="https://via.placeholder.com/300x150" usemap="#map1" alt="Map Example">
+  <map name="map1">
+    <area shape="rect" coords="0,0,150,150" href="https://example.com/one" alt="One">
+    <area shape="rect" coords="100,0,250,150" href="https://example.com/two" alt="Two">
+  </map>
+  <p><i>Note: If areas overlap, browser usually picks the first defined area.</i></p>
+
+  <!-- 7. Table Alignment Confusion -->
+  <h2>7. Table Alignment Confusion</h2>
+  <table border="1" width="300">
+    <tr>
+      <td colspan="2">Row 1 Cell 1+2</td>
+    </tr>
+    <tr>
+      <td>Row 2 Col 1</td>
+      <td>Row 2 Col 2</td>
+      <td>Row 2 Col 3</td>
+    </tr>
+  </table>
+
+  <!-- 8. Hidden Input Trap -->
+  <h2>8. Hidden Input Trap</h2>
+  <form method="get">
+    <input type="text" name="name" placeholder="Enter Name">
+    <input type="hidden" name="secret" value="42">
+    <input type="submit" value="Submit">
+  </form>
+  <p><i>After submission, look at the URL to see hidden value displayed.</i></p>
+
+  <!-- 9. Fake Link Deception -->
+  <h2>9. Fake Link Deception</h2>
+  <span class="fake-link" onclick="alert('Not a real link!')">Click me</span>
+
+  <!-- 10. Reverse Order List -->
+  <h2>10. Reverse Order List</h2>
+  <ol reversed>
+    <li>Item</li>
+    <li>Item</li>
+    <li>Item</li>
+    <li>Item</li>
+    <li>Item</li>
+    <li>Item</li>
+    <li>Item</li>
+    <li>Item</li>
+    <li>Item</li>
+    <li>Item</li>
+  </ol>
+
+</body>
+</html>
